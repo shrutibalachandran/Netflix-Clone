@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /*----logo-div-----*/
+  .nav-bar{
+    width: 100%;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .nav-bar1{
+    width: 100px;
+    height: 100%;
+  }
+  
+  .logo{
+    width: 200%;
+    height: 100%;
+    margin-left: 40px;
+  }
+
+  /*-----language & sign-in div-----*/
+
+  .language-select{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .language-select:focus{
+    outline: none;
+  }
+  
+  .language-select option{
+    background-color: rgb(218, 216, 216);
+  }
+  
+  .language-box{
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .language-box i{
+    font-size: 18px;
+  }
+
+  .sign-in{
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+
+  .nav-bar-items{
+    display: flex;
+    gap: 25px;
+  }
+
+  .sign-in:hover{
+    cursor: pointer;
+    background-color: #c50808;
+    color: #fff; 
+}
+
+/*----Main-Container div-----*/
+.main-container{
+  width: 100%;
+  height: 100%;
+}
+
+.main-container-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-container-overlay{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 119%;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to top,rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+/*----Main-Title -----*/
+.main1{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+}
+
+.main-title{
+  font-weight: 900;
+  font-size: 50px;
+  margin-bottom: 20px; 
+}
+
+.main-subtitle, .main-description {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.main-description{
+  margin: 50px 50px;
+}
+
+/*-----Email-box div----*/
+.email-input{
+  border: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding-left: 7px;
+}
+.email-address{
+  color: rgb(207, 201, 201);
+  font-weight: 600;
+  font-size: 16px;
+  position: absolute;
+  top: 28%;
+  left: 2%;
+  transition: 0.5s;
+}
+
+.email-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.email-form{
+  background-color: rgb(28, 27, 27);
+  border: 1px solid #9c9a9a;
+  color: #fff;
+  width: 50%;
+  height: 65px;
+  position: relative;
+}
+
+.email-input:focus + .email-label{
+  top: 0.2rem;
+  font-size: 10px;
+}
+
+.email-input:not(:placeholder-shown).email-input:not(:focus) + .email-label {
+  top: 0.2rem;
+  font-size: 10px;
+}
+
+.email-input:focus-visible{
+  outline: none;
+}
+
+.email-button{
+  background-color: #dc030f;
+  border: 1px solid #dc030f;
+  color: white;
+  padding: 18px 30px;
+  border-radius: 2px;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.email-button:hover{
+  cursor: pointer;
+  background-color: #c50808;
+}
+
+/*----Features Of Netflix----*/
+.feature{
+  display: flex;
+  flex-direction: row;
+  border-top: 8px solid #222;
+  padding: 32px 16px;
+}
+
+/*-----Feature-1-----*/
+.feature-details{
+  margin-top: 200px;
+  margin-left: 50px;
+}
+ 
+.feature-title{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.feature-sub-title{
+  font-size: 20px;
+  font-weight: 500;
+} 
+
+
+.feature-image-container{           
+  width: 40%; 
+  width: 862px;
+  position: relative;
+}
+
+.video-container{
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 13%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  z-index: -2;
+}
+
+/*-----Feature 2-----*/
+.stranger-things-poster-container{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-60%);
+  position: absolute;
+  width: 100%;
+  max-width: 315px;
+  height: 60px;
+  padding: 5px 10px;
+  gap: 15px;
+}
+
+.stranger-things-poster{
+  height: 50px;
+}
+
+.poster{
+  width: 100%;
+  height: 100%;
+}
+
+.poster-details{
+  width: 60%;
+}
+
+.poster-details h4{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.poster-details h6{
+  font-size: 12px;
+  font-weight: 400;
+  color: lightseagreen;
+}
+
+.download-icon-container{
+  height: 100%;
+}
+
+.gif{
+  width: 100%;
+  height: 100%;
+}
+
+.feature-title2{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.feature-sub-title2{
+  font-size: 20px;
+  font-weight: 500;
+} 
+
+
+/*-----Feature-3----*/
+.feature-3-background-video-container{
+  max-width: 63%;
+  max-height: 47%;
+  z-index: -2;
+  top: 9%;
+  left: 19%;
+}
+
+.video2{
+  width: 350px;
+}
+
+.feature-title3{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.feature-sub-title3{
+  font-size: 20px;
+  font-weight: 500;
+} 
+
+/*-----Feature-4----*/
+
+.feature-title4{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.feature-sub-title4{
+  font-size: 20px;
+  font-weight: 500;
+} 
+
+/*-----Netflix-Questions----*/
+
+.Question-container h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 900;
+    margin: 16px 48px;
+}
+
+.Question-container{
+  border-top: 8px solid #222;
+}
+
+.Question-div{
+  width: 100%;
+  margin-left: 8px;
+  row-gap: 10px;
+}
+
+.Question{
+  width: 80%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #303030;
+  border: 1px solid #303030;
+  color: #fff;
+  margin-left: 140px;
+  font-size: 30px;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+.Question i{
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Question p{
+  font-size: 30px;
+}
+
+.Question:hover{
+  background-color: #434344;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s; 
+}
+
+.Question-div{
+  position: relative;
+  }
+
+.Answer{
+  background-color: #303030;
+  border-top: 1px solid black;
+  width: 1214px; 
+  height: 200px;
+  /* transition: max-height 0.5s ease-in-out;  */
+  display: none; 
+  margin-left: 140px; 
+  position: absolute;
+  z-index: 100;
+transition: all 0.2s ease-in-out;
+
+}
+
+.Answer p{
+  margin: 1rem;
+}
+
+.Question-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .email2 p{
+    margin-left: 200px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+
+  .email-button2{
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 18px 30px;
+    border-radius: 2px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .email-button2:hover{
+    cursor: pointer;
+    background-color: #c50808;
+  }
+
+  /*-----Footer----*/
+
+  footer {
+  border-top: 8px solid #333;
+  padding: 2rem 1rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-2 {
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+
+.footer-1 h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 110px;
+
+}
+.footer-1 .h5{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-3{
+  margin-left: 110px;
+}
+
+
+
+
+
